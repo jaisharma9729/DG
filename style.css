@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar-nav.mx-lg-auto {
+gap: 20px;
+}
+.navbar-nav input{
+padding: 10px;
+border-radius: 5px;
+border: none;
+background-color: #ffffff;
+box-shadow: 0px 3px 5px #888888;
+
+}
+.fa-caret-down{
+margin-left: 5px;
+}
+
+
+.custom-shape-divider-top-1712759214 {
+    top: -1px; /* Adjust to fit your layout */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1; /* Set z-index to move it behind other elements */
+    background-color: #150338;
+  }
+  .custom-shape-divider-top-1712759214 svg {
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 112px;
+  }
+  .custom-shape-divider-top-1712759214 .shape-fill {
+    fill: #FFFFFF;
+  }
+ a,
+      a:hover,
+      a:focus,
+      a:active {
+          text-decoration: none;
+          outline: none;
+      }
+      
+      a,
+      a:active,
+      a:focus {
+          color: #6f6f6f;
+          text-decoration: none;
+          transition-timing-function: ease-in-out;
+          -ms-transition-timing-function: ease-in-out;
+          -moz-transition-timing-function: ease-in-out;
+          -webkit-transition-timing-function: ease-in-out;
+          -o-transition-timing-function: ease-in-out;
+          transition-duration: .2s;
+          -ms-transition-duration: .2s;
+          -moz-transition-duration: .2s;
+          -webkit-transition-duration: .2s;
+          -o-transition-duration: .2s;
+      }
+
+
+
+
+
+      
+      ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+      img {
+  max-width: 100%;
+  height: auto;
+}
+.hero-section {
+background-color: aliceblue !important;
+}
+
+.container h1 {
+font-size: 50px;
+font-weight: 700;
+letter-spacing:5px;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+.get-ty{
+border: none;
+background-color: transparent;
+font-size: 20px;
+font-weight: 600;
+
+
+
+}
+
+
+.get-ty span {
+  font-size: 20px;
+  background-color: #fff;
+  width: 100px;
+  padding: 2px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px #888888;
+
+}
+.img-cover {
+          width: 100%;
+          height: 100%;
+          object-fit:scale-down;
+      }
+
+.container .drivetext {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #625b5b;
+  letter-spacing: 3px;
+}
+
+
+
+
+
+     
+
+.footer {
+  padding: 0px 20px 0px;
+  background-color: #150338;
+}
+
+
+.footer .socialLinks {
+  margin-top: 28px;
+}
+
+.socialLinks ul li {
+  display: inline;
+  gap: 20px;
+}
+
+.socialLinks ul li a {
+display: flex;
+gap: 30px;
+color: #fff;
+margin-bottom: 10px;
+align-items: center;
+
+}
+
+.socialLinks ul li a i {
+  display: block;
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  background: #fafafa;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  line-height: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.socialLinks h1 {
+color: gray;
+font-size: 20px;
+}
+
+.socialLinks ul li a .fa-envelope {
+  color: #4267b2;
+}
+.socialLinks ul li a .fa-phone {
+  color: #4267b2;
+}
+.socialLinks ul li a .fa-facebook-f {
+  color: #4267b2;
+}
+
+.socialLinks ul li a .fa-twitter {
+  color: #1da1f2;
+}
+
+.socialLinks ul li a .fa-google-plus-g {
+  color: #dd5044;
+}
+
+.socialLinks ul li a .fa-linkedin-in {
+  color: #0177b5;
+}
+
+
+.socialLinks ul li a:hover i {
+  color: #fff;
+}
+
+.socialLinks ul li a:hover .fa-envelope {
+  background: #4267b2;
+}
+.socialLinks ul li a:hover .fa-phone {
+  background: #4267b2;
+}
+.socialLinks ul li a:hover .fa-facebook-f {
+  background: #4267b2;
+}
+
+.socialLinks ul li a:hover .fa-twitter {
+  background: #1da1f2;
+}
+
+.socialLinks ul li a:hover .fa-google-plus-g {
+  background: #dd5044;
+}
+
+.socialLinks ul li a:hover .fa-linkedin-in {
+  background: #0177b5;
+}
+footer .logo {
+  max-width: 200px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+.footer .widget3 ul li a,
+.footer .widget4 ul li a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, .6);;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+  display: block;
+}
+
+.footer .widget3 ul li a:hover,
+.footer .widget4 ul li a:hover,
+.footer .widget2 a:hover p {
+  color: #fff;
+}
+
+.footer .widget3 h5 {
+  margin-bottom: 22px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 21px;
+  line-height: 55px;
+}
+
+.footer .widget4 h5 {
+  margin-bottom: 22px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 21px;
+}
+
+.copyRightArea {
+  margin-top: 83px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px 0px 28px;
+}
+
+.copyRightArea p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.shares {
+background-color: #04044a;
+  border: none;
+  border-radius: 5px;
+}
+.form-control-custom {
+border: 0;
+border-bottom: 1px solid #ced4da; /* Bootstrap's default border color */
+border-radius: 0; /* Removes the default border radius */
+box-shadow: none; /* Removes the default box shadow */
+background-color: transparent;
+}
+
+/* Focus state */
+.form-control-custom:focus {
+border-color: #86b7fe; /* Bootstrap's default focus border color */
+box-shadow: none; /* Removes the box shadow on focus */
+}
+
+/* Placeholder styling */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #6c757d; /* Bootstrap's default placeholder color */
+opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #6c757d;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #6c757d;
+}
+.talk-sy {
+background-image: url(images/3rd\ section.png);
+background-repeat: no-repeat;
+background-position: right;
+}
+.talk-sy h3 {
+color: gray;
+font-size: 25px;
+font-weight: 400;
+margin-bottom: 50px;
+}
+.talk-sy h2 ,p , span {
+color: gray;
+}
+
+
+.container-swigy{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 90vh;
+
+}
+
+.wrapper {
+max-width: 1100px;
+width: 100%;
+position: relative;
+/* Add margin at the bottom to avoid overlapping with arrows */
+margin-bottom: 60px; 
+}
+
+.wrapper i {
+/* Adjust the positioning to place arrows at the bottom */
+bottom: -30px; /* Position arrows 30px below the bottom of the carousel */
+top: auto; /* Remove the top positioning */
+height: 50px;
+width: 50px;
+cursor: pointer;
+font-size: 1.25rem;
+position: absolute;
+text-align: center;
+line-height: 50px;
+background: #fff;
+border-radius: 50%;
+box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+/* Adjust the transform to only scale on active, not move */
+transform: scale(1); 
+transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+/* Scale down when clicked */
+transform: scale(0.85);
+}
+
+/* Position the left arrow on the left side of the carousel */
+.wrapper i:first-child {
+left: 50%; /* Start from the center */
+transform: translateX(-120%);
+z-index: 1;
+ /* Move to the left of the center */
+}
+
+/* Position the right arrow on the right side of the carousel */
+.wrapper i:last-child {
+right: 50%; /* Start from the center */
+transform: translateX(120%); /* Move to the right of the center */
+}
+
+.wrapper .carousel{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: calc((100% / 3) - 12px);
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+gap: 16px;
+border-radius: 8px;
+scroll-behavior: smooth;
+scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+display: none;
+}
+.carousel.no-transition {
+scroll-behavior: auto;
+}
+.carousel.dragging {
+scroll-snap-type: none;
+scroll-behavior: auto;
+}
+.carousel.dragging .card {
+cursor: grab;
+user-select: none;
+}
+.carousel :where(.card, .img) {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.carousel .card {
+scroll-snap-align: start;
+height: 342px;
+list-style: none;
+background: #fff;
+cursor: pointer;
+padding: 20px;
+flex-direction: column;
+border-radius: 8px;
+position: relative;
+}
+.carousel .card .img {
+background: #fff;
+padding: 10px;
+box-shadow: 0px 3px 5px #888888;
+position: absolute;
+top: 0%;
+
+
+
+
+}
+.card .img img {
+border-radius: 50%;
+object-fit: cover;
+}
+.carousel .card h2 {
+font-weight: 500;
+font-size: 1.56rem;
+margin: 30px 0 5px;
+color: gray;
+}
+.carousel .card span {
+color: #6A6D78;
+font-size: 1rem;
+text-align: center;
+margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+.wrapper .carousel {
+  grid-auto-columns: calc((100% / 2) - 9px);
+}
+}
+@media screen and (max-width: 600px) {
+.wrapper .carousel {
+  grid-auto-columns: 100%;
+}
+}
+.talk-sy h3 {
+width: 50%;
+font-size: 25px;
+text-transform: uppercase;
+color: #504d4d;
+}
+.laptop {
+background-image: url(images/3rd\ section\ -\ Copy.png);
+background-position: left;
+background-repeat: no-repeat;
+}
+.enroll {
+font-size: 20px;
+font-weight: 700;
+
+}
+@media screen and (max-width:767px) {
+.container h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.container .drivetext {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #625b5b;
+  letter-spacing: 3px;
+}
+.get-ty {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.talk-sy h3 {
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #504d4d;
+}
+.container-swigy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+}
+
+
