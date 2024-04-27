@@ -1,521 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Example</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <link rel="stylesheet" href="/style.css">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 py-3" style="background: aliceblue !important;">
-    <div class="container-xl">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-      <img src="/images/logo.png" alt="">
-      </a>
-      <!-- Navbar toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Collapse -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <!-- Nav -->
-        <div class="navbar-nav mx-lg-auto">
-          <a class="nav-item nav-link active" href="#" aria-current="page">Home</a>
-          <a class="nav-item nav-link" href="#">Company<i class="fa fa-caret-down"></i></a>
-          <a class="nav-item nav-link" href="#">Product<i class="fa fa-caret-down"></i></a>
-          <a class="nav-item nav-link" href="#">Services<i class="fa fa-caret-down"></i></a>
-          <a class="nav-item nav-link" href="#">Academics<i class="fa fa-caret-down"></i></a>
-          <a class="nav-item nav-link" href="#">Portfolio</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="#" class="nav__logo">
+                <img src="/bettlelogo.svg" alt="">
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
 
-        </div>
-        <!-- Right navigation -->
-        <div class="navbar-nav ms-lg-4">
-          <input type="text" placeholder="Search..">
-        </div>
-    
-        
-      </div>
-    </div>
-  </nav>
-  <section class="hero-section">
-  <div class="container pt-3">
-    <div class="row" style="align-items: center;">
-        <div class="col-sm-6">
-          <h1>Transforming <br>Educational <br> Campuses </h1>
-            <p class="drivetext">Drive Your Digital Transforma To Achieve Smarter Business Objectives </p>
-            <button class="get-ty"><span>+</span> Get Started</button>
-        </div>
-        <div class="col-sm-6 mt-sm-0 mt-5">
-            <img src="/images/banner-creative.png" alt="Descriptive Alt Text" class="img-cover">
-        </div>
-    </div>
-</div>
-</section>
-
-
-<div class="container mt-5">
-  <div class="row align-items-center">
-      <div class="col-sm-6">
-          <img src="/images/2nd section.png" alt="Descriptive Alt Text" class="img-cover">
-      </div>
-      <div class="col-sm-6 mt-sm-0 mt-5">
-          <h3>We Offer a Full Range of <b>Web, Software, & Digital Marketing </b> Services!</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut sed autem optio laborum consectetur qui sequi saepe quibusdam quisquam recusandae voluptatibus, quasi, accusantium officia nulla soluta delectus esse, deleniti consequatur.</p>
-          <div class="row">
-            <div class="col-md-6 col-12 mb-4">
-                <div class="row align-items-center">
-                    <div class="col-sm-3 col-3">
-                        <img src="images/Group 1.png" alt="Descriptive Alt Text" >
-                    
-                      </div>
-                      <div class="col col-6">
-                        <span><b>Beyond Tech</b> </span><br>
-                        <span>Upto 100%</span>
-                    </div>
-                </div>
+           <!--=============== NAV MENU ===============-->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
                 
-            </div>
-            <div class="col-md-6 col-12 mb-4">
-                <div class="row align-items-center">
-                    <div class="col-sm-3 col-3">
-                        <img src="images/Group 1.png" alt="Descriptive Alt Text" >
+
+                 <!--=============== DROPDOWN 1 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                     Industries <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                     </div>
-                    <div class="col col-9">
-                      <span> <b>Innovation Framework</b> </span> <br>
-                      <span>Expert work</span>
-                  </div>
-                </div>
-                
-            </div>
-            <div class="col-md-6 col-12 mb-4">
-                <div class="row align-items-center">
-                    <div class="col-sm-3 col-3">
-                        <img src="images/Group 1.png" alt="Descriptive Alt Text" >
+
+                    <ul class="dropdown__menu">
+                     <h4>Industries <i class="ri-arrow-right-line"></i></h4>
+                     <hr>
+                     <div class="dropdown__section">
+                     <div class="dropdown__left">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <img src="images/Group.svg" alt="icon"> Private Equity
+                          </a>                          
+                       </li>
+                       <hr>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                            <img src="images/Group 1171276462.svg" alt="icon"> Venture Capital
+                          </a>
+                       </li>
+                       <hr>
+                       <li>
+                         <a href="#" class="dropdown__link">
+                            <img src="images/fi_7175566.svg" alt="icon"> Commercial Real Estate
+                             </a>
+                          </li>
+                          <hr>
+                         </div>
+                         <div class="dropdown__right">
+                      <li>
+                       <a href="#" class="dropdown__link">
+                        <img src="images/fi_6022494.svg" alt="icon">Investment Banking/M&A Advisory
+                       </a>
+                    </li>
+                    <hr>
+                    <li>
+                     <a href="#" class="dropdown__link">
+                        <img src="images/Group 1171276462 (1).svg" alt="icon"> Corporate Devolopment / M&A
+                     </a>
+                  </li>
+                  <hr>
+                  <li>
+                   <a href="#" class="dropdown__link">
+                    <img src="images/Group 1171276462 (2).svg" alt="icon"> Consulting CRM
+                   </a>
+                </li>
+                <hr>
+
+                     
+                     </div>
+                   </div>
+                    </ul>
+                 </li>
+                 
+              
+
+                 <!--=============== DROPDOWN 2 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Product <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                     </div>
-                    <div class="col col-9">
-                      <span> <b>Agile Practices</b> </span><br>
-                      <span>To reach your target</span>
-                  </div>
-                </div>
-               
-            </div>
-            <div class="col-md-6 col-12 mb-4">
-                <div class="row align-items-center">
-                    <div class="col-sm-3 col-3">
-                        <img src="images/Group 1.png" alt="Descriptive Alt Text" >
-                    </div>
-                    <div class="col col-9">
-                      <span> <b>Value Delivered</b></span><br>
-                      <span>Clients satisfaction</span>
-                  </div>
-                </div>
-               
-            </div>
-        </div>
-        </div>
-  </div>
-</div>
-<section class="talk-sy">
-<div  class="container mt-5 ">
-  <h3>What we do? let’s check <br> <b>Our Products </b>in
-   <b> LET'S DO</b> GREAT WORK TOGETHER
-  </h3>
-<div class="container-swigy">
-  
-  <div class="wrapper">
-    <i id="left" class="fa-solid fa-angle-left"></i>
-    <ul class="carousel">
-      <li class="card">
-        <div class="img"><img src="images/cards Icons.png" alt="img" draggable="false"></div>
-        <h2>LEADBOARD</h2>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, illo eos nam accusantium recusandae similique quod magnam officia cum vero non</span>
-        <button class="get-ty"><span>+</span> Find Out More</button>
-      </li>
-      <li class="card">
-        <div class="img"><img src="images/icon1.png" alt="img" draggable="false"></div>
-        <h2>LEADBOARD</h2>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, illo eos nam accusantium recusandae similique quod magnam officia cum vero non</span>
-        <button class="get-ty"><span>+</span> Find Out More</button>
-      </li>
-      <li class="card">
-        <div class="img"><img src="images/cards Icons.png" alt="img" draggable="false"></div>
-        <h2>LEADBOARD</h2>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, illo eos nam accusantium recusandae similique quod magnam officia cum vero non</span>
-        <button class="get-ty"><span>+</span> Find Out More</button>
-      </li>
-      <li class="card">
-        <div class="img"><img src="images/icon1.png" alt="img" draggable="false"></div>
-        <h2>LEADBOARD</h2>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, illo eos nam accusantium recusandae similique quod magnam officia cum vero non</span>
-        <button class="get-ty"><span>+</span> Find Out More</button>
-      </li>
-      <li class="card">
-        <div class="img"><img src="images/cards Icons.png" alt="img" draggable="false"></div>
-        <h2>LEADBOARD</h2>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, illo eos nam accusantium recusandae similique quod magnam officia cum vero non</span>
-        <button class="get-ty"><span>+</span> Find Out More</button>
-      </li>
-      <li class="card">
-        <div class="img"><img src="images/icon1.png" alt="img" draggable="false"></div>
-        <h2>LEADBOARD</h2>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, illo eos nam accusantium recusandae similique quod magnam officia cum vero non</span>
-        <button class="get-ty"><span>+</span> Find Out More</button>
-      </li>
-    </ul>
-    <i id="right" class="fa-solid fa-angle-right"></i>
-  </div>
-</div>
-</div>
-</section>
 
-
-<section class="laptop">
-  <div class="container mt-5 mb-5">
-    <div class="row align-items-center">
-        <div class="col-sm-6">
-            <img src="/images/Laptop.png" alt="Descriptive Alt Text" class="img-cover">
-        </div>
-        <div class="col-sm-6 mt-sm-0 mt-5">
-            <h3 class="mb-5">WE OFFER WIDE RANGE OF <b>software development products</b> & <b>services</b> To Help Your organization grow</h3>
-
-
-            <span class="enroll ">ENROLMENT MANAGEMENT SYSTEM </span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut sed autem optio laborum consectetur qui sequi saepe quibusdam quisquam recusandae voluptatibus, quasi.</p>
-            <div class="row">
-              <div class="col">
-                  <div class="row align-items-center">
-                      
-                        <div class="col">
-                          <span><b>WORK</b> </span><br>
+                    <ul class="dropdown__menu">
+                        <div class="dropdown__section">
+                        <div class="dropdown__left">
+                          <li>
+                             <a href="#" class="dropdown__link">
+                                <img src="images/crm.svg" alt="icon"> <div class="subtest">
+                                    CRM
+                                <p>Eliminate busywork and manage deals</p>
+                                </div> 
+                             </a>                          
+                          </li>
+                          <hr>
+   
+                          <li>
+                            <a href="#" class="dropdown__link">
+                                <img src="images/reporting.svg" alt="icon"> <div class="subtest">
+                                    Reporting
+                                <p>Drive Efficiency to Close More Deals</p>
+                                </div> 
+                             </a>
+                          </li>
+                          <hr>
+                          <li>
+                            <a href="#" class="dropdown__link">
+                                <img src="images/connection 1.svg" alt="icon"> <div class="subtest">
+                                    Integrations
+                                <p>Use Relationship Intelligence Everywhere</p>
+                                </div> 
+                             </a>
+                             </li>
+                             <hr>
+                             <li>
+                                <a href="#" class="dropdown__link">
+                                    <img src="images/connection 1.svg" alt="icon"> <div class="subtest">
+                                        Salesforce
+                                    <p>The Power of Relationship Intelligence Inside Salesforce</p>
+                                    </div> 
+                                 </a>
+                                 </li>
+                                 <hr>
+                            </div>
+                            <div class="dropdown__right">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <img src="images/relation.svg" alt="icon"> <div class="subtest">
+                                            Relationship Intelligence
+                                        <p>Uncover new opportunities and find warm introductions</p>
+                                        </div> 
+                                     </a>
+                                     </li>
+                                     <hr>
+                                     <li>
+                                        <a href="#" class="dropdown__link">
+                                            <img src="images/mobile-app 1.svg" alt="icon"> <div class="subtest">
+                                                Mobile
+                                            <p>Manage Deals From Anywhere</p>
+                                            </div> 
+                                         </a>
+                                         </li>
+                                         <hr>
+                                         <li>
+                                            <a href="#" class="dropdown__link">
+                                                <img src="images/algorithm (1) 1.svg" alt="icon"> <div class="subtest">
+                                                    Deal Flow Software
+                                                <p>Easily Manage Your Deals</p>
+                                                </div> 
+                                             </a>
+                                             </li>
+                                             <hr>
+   
                         
+                        </div>
                       </div>
-                  </div>
+                       </ul>
+                 </li>
+
+                 <li><a href="#" class="nav__link">Calculator</a></li>
+              </ul>
+           </div>
+           <div class="nav__menu"  >
+            <ul class="nav__list">
+                <li><a href="#" class="nav__link">Log In</a></li>
+                <button>Request A Demo <i class="ri-arrow-right-line"></i> </button>
+             </ul>
+           </div>
+        </nav>
+     </header>
+   
+     
+     <div class="banner">
+        <section class="banner-conatiner">
+
+
+        <div class="left-testarea">
+            <section class="home">
+                <div class="container-banner">
+                    <div class="slider-container active">
+                        <div class="slidey">
+                            <div class="cantent">
+                                <h1>Build more <span class="spanmoniter">relationships. <div class="bottomy"></div></span>
+                                    Close more deals. Automate everything in between.
+                                </h1>
+                                <p>
+                                    The relationship intelligence & deal flow platform designed by ex-investors for  Venture Capital        
+                                </p>
+                                <div class="inputbtn">
+                                    <input type="search"  placeholder="Enter your Email">
+                                    <button type="button" class="loginbtn">Request a Demo <i class="ri-arrow-right-line"></i> </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slidey">
+                            <div class="cantent">
+                                <h1>Stop wasting hours on outdated spreadsheets and clunky <span class="spanmoniter">CRMs <div class="bottomy"></div></span>
+                                
+                                </h1>
+                                <p>
+                                    Our news platform helps you  eliminate busywork  and manage your deals and relationships effortlessly.        
+                                </p>
+                                <div class="inputbtn">
+                                    <input type="search" name="" id="" placeholder="Enter your email here">
+                                    <button type="button" class="loginbtn">Request a Demo <i class="ri-arrow-right-line"></i></button>
+                                </div>
+                               
+            
+                            </div>
+                            
+                        </div>
+                    </div>
                   
+                     <div id="prevt" onclick="prev()"></div>
+                    <div id="pnext" onclick="next()"></div>
+            
+                </div>
+            
+        
+            </section >
+
+        </div>
+        <div class="right-testimg">
+            <img src="images/landing-img.png" alt="banner-img">
+            <img src="images/Hexagon.svg" alt="icon" class="hexagon">
+
+        </div>
+        </section>
+
+
+</div>
+
+<section class="Calculator">
+    
+    
+    <div class="left-calculator">
+        <h1>Find Signals That Close Deals</h1>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Number of Team Members:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    How many people are in your firm’s deal team?
+                </div>
               </div>
-              <div class="col">
-                  <div class="row align-items-center">
-                      
-                      <div class="col">
-                        <span> <b>TYPE</b> </span> <br>
-                       
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Size of Network:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    How many contacts are in your network?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Number of Signals Per Contact:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    How many signals (job changes, investments, mentions). Average: 1 signal per 2 contacts.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Percent of Legitimate Signals:
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Signals that can lead you to reach out to a certain company. Average: 10%                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    Percent of Hard to Discover Signals:                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Signals that can only be discovered with relationship intelligence technology. Average: 10 to 20%                  </div>
+                </div>
+              </div>
+          </div>
+
+    </div>
+
+    <div class="right-calculator">
+
+        <div class="teams-meme">
+            <h4>Number of Team Members</h4>
+            <input type="number" id="team-member" placeholder="0" onchange="getresult()">
+        </div>
+        <div class="teams-meme">
+            <h4>Size of Network</h4>
+            <input type="number" id="network-size" placeholder="0"  onchange="getresult()">
+        </div>
+        <div class="teams-meme">
+            <h4>Number of Signals Per Contact / Year</h4>
+            <input type="number" id="signals" placeholder="0" onchange="getresult()">
+        </div>
+        <div class="teams-meme">
+            <h4>% Legitimate Signalsr</h4>
+            <div class="range-slider">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange1" onchange="getresult()">
+                <div class="slider-value" id="sliderValue1">0</div>
+              </div>
+        </div>
+        <div class="teams-meme">
+            <h4>% Unique/Hard To Discover Signals</h4>
+            <div class="range-slider">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange2" onchange="getresult()">
+                <div class="slider-value" id="sliderValue2">0</div>
+              </div>
+        </div>
+        <div class="teams-meme">
+            <h4>Number of New Signals</h4>
+            <input type="number" id="result" placeholder="0">
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section class="blog">
+        <h1>Latest Posts</h1>
+        <div class="tab">
+            <div class="left-tabs">
+            <button class="tablinks active" onclick="openCity(event, 'London')">All</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Private Equity</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Investment Banking</button>
+            <button class="tablinks" onclick="openCity(event, 'Palwal')">Consulting</button>
+        </div>
+        <div class="right-tabs">
+            <input type="text" placeholder="Search">
+            <button><i class="ri-search-line"></i></button>
+        </div>
+          </div>
+          
+          <div id="London" class="tabcontent">
+           <div class="custom-card-container">
+            <div class="custom-card">
+                <img src="images/blog1.png" alt="Avatar" style="width:100%">
+                <div class="container-bginfo">
+                  <h4>Private Equity</h4> 
+                  <h2><b>Introducing Campaigns</b></h2>
+                  <p>With competition getting tougher in the private markets, becoming...</p> 
+                </div>
+              </div>
+              <div class="custom-card">
+                <img src="images/blogtwo.png" alt="Avatar" style="width:100%">
+                <div class="container-bginfo">
+                  <h4>Investment Banking</h4> 
+                  <h2><b>Introducing Podcasts</b></h2>
+                  <p>With competition getting tougher in the private markets, becoming...</p> 
+                </div>
+              </div>
+              <div class="custom-card">
+                <img src="images/blogthree.png" alt="Avatar" style="width:100%">
+                <div class="container-bginfo">
+                  <h4>Consulting</h4> 
+                  <h2><b>Introducing Templates</b></h2>
+                  <p>With competition getting tougher in the private markets, becoming...</p> 
+                </div>
+              </div>
+              <div class="custom-card">
+                <img src="images/blogthree.png" alt="Avatar" style="width:100%">
+                <div class="container-bginfo">
+                  <h4>Consulting</h4> 
+                  <h2><b>Introducing Templates</b></h2>
+                  <p>With competition getting tougher in the private markets, becoming...</p> 
+                </div>
+              </div>
+              <div class="custom-card">
+                <img src="images/blogtwo.png" alt="Avatar" style="width:100%">
+                <div class="container-bginfo">
+                  <h4>Investment Banking</h4> 
+                  <h2><b>Introducing Podcasts</b></h2>
+                  <p>With competition getting tougher in the private markets, becoming...</p> 
+                </div>
+              </div>
+              <div class="custom-card">
+                <img src="images/blog1.png" alt="Avatar" style="width:100%">
+                <div class="container-bginfo">
+                  <h4>Private Equity</h4> 
+                  <h2><b>Introducing Campaigns</b></h2>
+                  <p>With competition getting tougher in the private markets, becoming...</p> 
+                </div>
+              </div>
+
+           </div>
+           <div id="load-more-btn"> load more <i class="ri-arrow-down-line"></i> </div>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <div class="custom-card-container">
+               
+                  <div class="custom-card">
+                    <img src="images/blogtwo.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Investment Banking</h4> 
+                      <h2><b>Introducing Podcasts</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
                     </div>
                   </div>
-                  
-              </div>
-              <div class="col">
-                  <div class="row align-items-center">
-                      
-                      <div class="col">
-                        <span> <b>LINK</b> </span><br>
-                       
+                  <div class="custom-card">
+                    <img src="images/blog1.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Private Equity</h4> 
+                      <h2><b>Introducing Campaigns</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
+                    </div>
+                  </div>
+                  <div class="custom-card">
+                    <img src="images/blogthree.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Consulting</h4> 
+                      <h2><b>Introducing Templates</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
+                    </div>
+                  </div>
+    
+               </div>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <img src="images/blogthree.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Consulting</h4> 
+                      <h2><b>Introducing Templates</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
+                    </div>
+                  </div>
+                <div class="custom-card">
+                    <img src="images/blog1.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Private Equity</h4> 
+                      <h2><b>Introducing Campaigns</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
+                    </div>
+                  </div>
+                  <div class="custom-card">
+                    <img src="images/blogtwo.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Investment Banking</h4> 
+                      <h2><b>Introducing Podcasts</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
                     </div>
                   </div>
                  
-              </div>
-             
+    
+               </div>
           </div>
+          <div id="Palwal" class="tabcontent">
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <img src="images/blog1.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Private Equity</h4> 
+                      <h2><b>Introducing Campaigns</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
+                    </div>
+                  </div>
+                  <div class="custom-card">
+                    <img src="images/blogthree.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Consulting</h4> 
+                      <h2><b>Introducing Templates</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
+                    </div>
+                  </div>
+                  <div class="custom-card">
+                    <img src="images/blogtwo.png" alt="Avatar" style="width:100%">
+                    <div class="container-bginfo">
+                      <h4>Investment Banking</h4> 
+                      <h2><b>Introducing Podcasts</b></h2>
+                      <p>With competition getting tougher in the private markets, becoming...</p> 
+                    </div>
+                  </div>
+                 
+    
+               </div>
           </div>
+
+        </section>
+    
+<footer>
+    <section class="footer">
+    <div class="footer-content">
+        <a href="#"><img src="/bettlelogo.svg" alt="logo"></a>
+        <p>The Relationship Intelligence and Deal Flow CRM Designed by Ex-Investors</p>
+
+        <div class="icons">
+            <a href="#"><img src="images/facebook.svg" alt="fb"></a>
+            <a href="#"><img src="images/Twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="images/click.svg" alt="click"></a>
+            <a href="#"><img src="images/linkdin.svg" alt="linkdin"></a>
+
+        </div>
     </div>
-  </div>
+    <div class="footer-content">
+        <h4>About</h4>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </div>
+    <div class="footer-content">
+        <h4>Resources</h4>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Content Library</a></li>
+        <li><a href="#">Customer Stories</a></li>
+    </div>
+    <div class="footer-content">
+        <h4>Industries</h4>
+        <li><a href="#">Venture Capital</a></li>
+        <li><a href="#">Private Equity</a></li>
+        <li><a href="#">Mergers & Acquistions</a></li>
+        <li><a href="#">Investment Banking</a></li>
+        <li><a href="#">Commercial Realestate</a></li>
+        <li><a href="#">Consulting</a></li>
+    </div>
+    <div class="footer-content">
+        <h4>Product</h4>
+        <li><a href="#">CRM</a></li>
+        <li><a href="#">Reporting</a></li>
+        <li><a href="#">Mobile</a></li>
+        <li><a href="#">Integrations</a></li>
+        <li><a href="#">Salesforce</a></li>
+        <li><a href="#">Relationship intelligence</a></li>
+    </div>
 </section>
-
-
-
-
-<section class="talk-sy">
-<div class="container mt-5 mb-5">
-  <h3>WHAT PEOPLE SAY ABOUT OUR <b> SERVICS </b>
-    <b> Educational institutes & Digital MArketing</b>
-  </h3>
-  <div class="row pb-5">
-    <div class="col-md-6 mt-sm-0 mt-5">
-      <h2>Need to Discuss with Us... Let's Talk</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, in quo molestias dicta corporis quam rerum laboriosam, ipsam alias culpa porro praesentium consectetur, nemo quibusdam. Commodi, pariatur molestiae. Vel, minus?</p>
-      <span>NICK MICHEAl</span>
-    </div>
-    <div class="col-md-6 mt-sm-0 mt-5">
-      <form>
-        <div class="row mb-3">
-          <!-- Left Column -->
-          <div class="col-md-6">
-            <input type="text" class="form-control form-control-custom mb-3" id="name" name="name" placeholder="Name">
-            <input type="text" class="form-control form-control-custom" id="contact-number" name="contact-number" placeholder="Contact Number">
-          </div>
-          <!-- Right Column -->
-          <div class="col-md-6">
-            <input type="text" class="form-control form-control-custom mb-3" id="organization-name" name="organization-name" placeholder="Organization Name">
-            <input type="text" class="form-control form-control-custom mb-3" id="organization-name" name="organization-name" placeholder="Intrusted For">
-           
-          </div>
-          <div class="col-md-12">
-            <input type="text" class="form-control form-control-custom mb-3" id="name" name="name" placeholder="Email">
-          </div>
-          <div class="col-md-12">
-            <input type="text" class="form-control form-control-custom mb-3" id="name" name="name" placeholder="Message">
-          </div>
-        </div>
-        <button class="get-ty"><span>+</span> Send Request</button>
-      </form>
-      
-      
-    </div>
-  </div>
-</div>
-</section>
-
-
-  <div class="custom-shape-divider-top-1712759214">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-  </div>
-  <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="widget1">
-                    <div class="logo">
-                        <img src="/images/logo symbol.png" class="img-fluid" alt="">
-                    </div>
-                    
-                    <div class="socialLinks">
-                      
-                        <ul>
-                            <li>
-                                <a href="#">
-                                  <i class="fa-light fa-envelope"></i>
-                                  <div>
-                                    <h1>Email</h1>
-                                    <span>info@ctpl.io</span>
-                                  </div>
-                                    
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                  <i class="fa-regular fa-phone"></i>
-                                  <div>
-                                  <h1>Phone:</h1>
-                                    <span>+91 7795665130</span>
-                                  </div>
-                                </a>
-                            </li>
-                            
-                           
-                        </ul>
-                    </div>
-                    
-                    <div class="socialLinks">
-                      <h1>Social:</h1>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                    <span>Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                    <span>Twitter</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                    <span>Linkdin</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-google-plus-g"></i>
-                                    <span>Instagram</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget3">
-                  <h5>
-                      Useful Links
-                  </h5>
-                  <ul>
-                      <li>
-                          <a href="#">
-                              Home
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              About Us
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              contact us
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              privecy
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              skills
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              career
-                          </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                            Refund Policy
-                        </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                         Terms of Use
-                      </a>
-                  </li>
-                    
-                  </ul>
-              </div>
-          </div>
-           
-            <div class="col-sm-6 col-lg-3">
-                <div class="widget3">
-                    <h5>
-                        Products & Services
-                    </h5>
-                    <ul>
-                        <li>
-                            <a href="#">
-                               Leadboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Enrollment Management System
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Marketing Automation Platform
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Recruitment Management System
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Bot Developement
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Digital Marketing Services
-                            </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                              Full Stack Developement 
-                          </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                           Mobile App Design
-                        </a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="widget3">
-                    <h5>
-                        Reach Us
-                    </h5>
-                    <ul>
-                        <li>
-                            <a href="#">
-                              <p>Regd Office:</p>
-                                Plot No-GA-623, Flat No-42,
-                                S.S Vihar,Bhubaneswar, Khordha,
-                                Orissa,India,751021
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                              <p>Regd Office:</p>
-                              Plot No-GA-623, Flat No-42,
-                              S.S Vihar,Bhubaneswar, Khordha,
-                              Orissa,India,751021
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                              <p>Regd Office:</p>
-                                Plot No-GA-623, Flat No-42,
-                                S.S Vihar,Bhubaneswar, Khordha,
-                                Orissa,India,751021
-                            </a>
-                        </li>
-                       
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container shares">
-      <div class="row justify-content-center">
-          <div class="col-2 d-flex justify-content-center">
-              <img src="/images/Layer 6.png" alt="" class="img-cover">
-          </div>
-          <div class="col-2 d-flex justify-content-center">
-              <img src="/images/Layer 5.png" alt="" class="img-cover">
-          </div>
-          <div class="col-2 d-flex justify-content-center">
-              <img src="/images/Layer 3.png" alt="" class="img-cover">
-          </div>
-          <div class="col-2 d-flex justify-content-center">
-              <img src="/images/Layer 4.png" alt="" class="img-cover">
-          </div>
-          <div class="col-2 d-flex justify-content-center">
-            <img src="/images/Layer 7 copy 3.png" alt="" class="img-cover">
-        </div>
-      </div>
-  </div>
-  
-  
-
-    <div class="copyRightArea">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; Copyright All rights reserved 2019.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>
 
+<script src="script.js"></script>
 
-<script src="/script.js"></script>
+
   
+
 </body>
 </html>
